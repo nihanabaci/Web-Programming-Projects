@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block body %}
+    <h1>Search results:</h1>
+
+    <ul>
+        {% for entry in sub_str_list %}
+            <li >
+                <a class="entry_item" href="{% url 'click:title' title=entry%}">{{ entry }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

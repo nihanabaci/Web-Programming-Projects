@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <style>
+        div {
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-top: 150px;
+        }
+
+        .box {
+            outline: none;
+            border-radius: 25px;
+            margin-top: -25px;
+            width: 35%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 15px;
+            height: 15px;
+        }
+
+        .search {
+            display: block;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            height: 36px;
+            width: 180px;
+        }
+
+        .google_search {
+            color: black;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .google_search:hover {
+            text-decoration: underline;
+         }
+        .text {
+            color: #4285f4;
+            font: 16px/16px roboto-regular, arial, sans-serif;
+            top:-25px;
+            left: 120px;
+            position: relative;
+            white-space: nowrap;
+        }
+        .my_name {
+            color: black;
+            text-decoration: none;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <a class="google_search" href="index.html">Google Search</a>
+    <div>
+        <span style="color:blue">G</span>
+        <span style="color:red">o</span>
+        <span style="color:orange">o</span>
+        <span style="color:blue">g</span>
+        <span style="color:green">l</span>
+        <span style="color:red">e</span>
+        <p class="text">Images</p>
+    </div>
+
+    <form action="https://google.com/images">
+        <input class="box" type="text" name="q">
+        <input class="search" type="submit" value="Google Images Search">
+    </form>
+    <p class="my_name">by N. Abaci</p>
+</body>
+</html>

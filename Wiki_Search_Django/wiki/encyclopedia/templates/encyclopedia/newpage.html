@@ -1,0 +1,32 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Page
+{% endblock %}
+
+{% block body %}
+        <h3 style="color: dodgerblue; margin-left: 60px;">Create a new encyclopedia entry!</h3>
+        <form action="" method="post" action="{% url 'click:newpage' %}">
+            {% csrf_token %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="alert alert-danger">
+                        <strong>Heyyy!</strong> {{msg.message}}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div>
+                <b>Title:</b>
+                <input class="title" type="text" name='title'>
+            </div>
+            <div>
+                <b>Text Area:</b>
+                <input class="textarea" type="text" name='textarea'>
+                <input class="submit_button" type="submit" value="Submit" > 
+            </div>
+                         
+        </form>
+        
+
+    
+{% endblock %}

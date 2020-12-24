@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block body %}
+        <h2 style="color: dodgerblue; ">Change entry for the title: {{title_ph}}</h2>
+        <form action="" method="POST" action="{% url 'click:editPage' title_ph%}">
+            {% csrf_token %}
+            <div>
+                <input class="title" type="hidden" name='title' value='{{ title_ph }}'>
+            </div>
+            <b style="font-size: 20px;">Text Area:</b>
+            <div style="margin-top: 10px;">
+    
+                <textarea style="font-size: 30px; height: 540px;" name='textarea'>{{text_ph}}</textarea>
+                <input class="submit_button" type="submit" value="Submit" > 
+            </div>
+                         
+        </form>
+        
+
+
+
+    
+{% endblock %}
