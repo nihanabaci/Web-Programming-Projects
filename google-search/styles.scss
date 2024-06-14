@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Google logo */
+%logo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    span:nth-child(1) { color: #4285F4; }
+    span:nth-child(2) { color: #EA4335; }
+    span:nth-child(3) { color: #FBBC05; }
+    span:nth-child(4) { color: #4285F4; }
+    span:nth-child(5) { color: #34A853; }
+    span:nth-child(6) { color: #EA4335; }
+    span:nth-child(7) { color: #4285F4; font-size: 1rem; letter-spacing: normal;}
+}
+
+.small-logo {
+    @extend %logo;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: -4px;
+}
+
+.big-logo {
+    @extend %logo;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: -10px;
+}
+
+/* Header section */
+%header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.regular-and-image-header {
+    @extend %header;
+    justify-content: flex-end;
+    align-items: center;
+}
+.advanced-header {
+    @extend %header;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Google.com and google image search section */
+.main_search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: Arial, sans-serif;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Google.com and google image input box */
+.input-box {
+    width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Advanced search box */
+.search-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.search-field label {
+    width: 330px;
+    margin-right: 10px; 
+}
+
+.search-field input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-size: 1rem;
+    width: 400px;
+}
+
+/* Buttons */
+.regular-button {
+    padding: 7px;
+    border: #f8f9fa;
+    background-color: #f8f9fa;
+    padding: 14px;
+}
+
+.regular-button:hover {
+    background-color: #d6dade
+}
+
+.advanced-button {
+    padding: 7px;
+    background-color: #4285F4; /* Blue background */
+    color: #ffffff; /* White text */
+    margin-left: 30px;
+    padding: 7px;
+    border: #4285F4;
+}
+
+.advanced-button:hover {
+    background-color:#0e67f5;
+}

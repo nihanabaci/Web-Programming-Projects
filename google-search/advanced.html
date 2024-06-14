@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="advanced-header">
+        <div class="small-logo">
+            <span>G</span>
+            <span>o</span>
+            <span>o</span>
+            <span>g</span>
+            <span>l</span>
+            <span>e</span>
+        </div>
+        <form action="google.html">
+            <input class="regular-button" type="submit" value="Google Search">
+        </form>
+    </div>
+    <h2 style="color: #EA4335; margin-left: 30px;"> Advanced Seach </h2>
+    <h3 style="margin-left: 30px;"> Find pages with.. </h3>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <div class="search-field">
+          <label for="all-words">Find pages with… "all these words:"</label>
+          <input type="text" id="all-words" name="q" required>
+        </div>
+        <div class="search-field">
+          <label for="exact-phrase">Find pages with… "this exact word or phrase:"</label>
+          <input type="text" id="exact-phrase" name="as_epq">
+        </div>
+        <div class="search-field">
+          <label for="any-words">Find pages with… "any of these words:"</label>
+          <input type="text" id="any-words" name="as_oq">
+        </div>
+        <div class="search-field">
+          <label for="none-words">Find pages with… "none of these words:"</label>
+          <input type="text" id="none-words" name="as_eq">
+        </div>
+        <input class="advanced-button" type="submit" value="Advanced Search">
+      </form>
+
+</body>
+</html>
